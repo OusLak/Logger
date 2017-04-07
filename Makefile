@@ -29,9 +29,10 @@ main: main.cpp
 
 
 
-
+.PHONY : clean
 clean:
-	rm -f *.o main simple_server
+	rm -f $(main_objects) $(simple_server_objects) *.o main simple_server
+	
 
 
 
