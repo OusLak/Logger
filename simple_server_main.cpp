@@ -1,9 +1,9 @@
-#include "ServerSocket.h"
-#include "SocketException.h"
+#include "inc/ServerSocket.h"
+#include "inc/SocketException.h"
 #include <string>
 #include <iostream>
 
-int main ( int argc, int argv[] )
+int main ()
 {
   std::cout << "running....\n";
 
@@ -25,7 +25,7 @@ int main ( int argc, int argv[] )
 		  std::string data;
 		  new_sock >> data;
 		  new_sock << data;
-		  std::cout << data << "\"\n";;
+		  std::cout << data << "\n";;
 		}
 	    }
 	  catch ( SocketException& ) {}

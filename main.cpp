@@ -1,10 +1,10 @@
 #include <iostream>
 #include <string>
 
-#include "Logger.h"
-#include "LogError.h"
-#include "LogWarning.h"
-#include "LogVerbosity.h"
+#include "inc/Logger.h"
+#include "inc/LogError.h"
+#include "inc/LogWarning.h"
+#include "inc/LogVerbosity.h"
 
 using namespace std;
  

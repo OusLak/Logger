@@ -1,5 +1,12 @@
-main_objects = LogVerbosity.o LogWarning.o LogError.o Logger.o ClientSocket.o Socket.o main.o
-simple_server_objects = ServerSocket.o Socket.o simple_server_main.o
+##################################################################
+##  Makefile for the Logger and the simple server
+##  Created By: Oussama Lakhneche
+##################################################################
+
+
+
+main_objects = src/LogVerbosity.o src/LogWarning.o src/LogError.o src/Logger.o src/ClientSocket.o src/Socket.o main.o
+simple_server_objects = src/ServerSocket.o src/Socket.o simple_server_main.o
 
 all : main simple_server
 

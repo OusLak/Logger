@@ -1,4 +1,4 @@
-#include "LogVerbosity.h"
+#include "../inc/LogVerbosity.h"
 
 
 using namespace std;
@@ -46,7 +46,7 @@ void LogVerbosity::LogInServer(string msg){
 
       try
     {
-      client_socket << msg << LogTime(time(0));
+      client_socket << msg << " " << LogTime(time(0));
       client_socket >> reply;
     }
       catch ( SocketException& ) {}

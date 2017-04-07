@@ -1,4 +1,4 @@
-#include "LogWarning.h"
+#include "../inc/LogWarning.h"
 
 
 using namespace std;
@@ -46,7 +46,7 @@ void LogWarning::LogInServer(string msg){
 
       try
     {
-      client_socket << msg << LogTime(time(0));
+      client_socket << msg << " " << LogTime(time(0));
       client_socket >> reply;
     }
       catch ( SocketException& ) {}
